@@ -1,9 +1,9 @@
-<link rel="stylesheet" href="http://whmcs.vietnix.vn/modules/addons/proxmox/templates/admin/proxmox.css">
-<script type="text/javascript" src="http://whmcs.vietnix.vn/modules/addons/proxmox/templates/admin/proxmox.js"></script>
+<link rel="stylesheet" href="/modules/addons/proxmox/templates/admin/proxmox.css">
+<script type="text/javascript" src="/modules/addons/proxmox/templates/admin/proxmox.js"></script>
 <script src="https://rawgit.com/notifyjs/notifyjs/master/dist/notify.js"></script>
 
 <div>
-  <a class="btn btn-default" href="http://whmcs.vietnix.vn/admin/addonmodules.php?module=proxmox">Reload page</a>
+  <a class="btn btn-default" href="addonmodules.php?module=proxmox">Reload page</a>
 </div>
 <br/>
 <div id="proxmox">
@@ -132,8 +132,8 @@
                {foreach from=$paiditems key=ID item=i}
                <tr id="item-{$i.id}">
                   <td style="width: 7%;">{'#'}{$i.id}</td>
-                  <td style="width: 8%;"><a target="_blank" href="http://whmcs.vietnix.vn/admin/invoices.php?action=edit&id={$i.invoiceid}">{'#'}{$i.invoiceid}</a></td>
-                  <td style="width: 12%;"><a target="_blank" href="http://whmcs.vietnix.vn/admin/clientssummary.php?userid={$i.userid}">{$i.username}</a></td>
+                  <td style="width: 8%;"><a target="_blank" href="invoices.php?action=edit&id={$i.invoiceid}">{'#'}{$i.invoiceid}</a></td>
+                  <td style="width: 12%;"><a target="_blank" href="clientssummary.php?userid={$i.userid}">{$i.username}</a></td>
                   <td style="width: 6%;">{$i.type}</td>
                   <td style="width: 35%;">{$i.description}</td>
                   <td style="width: 15%;">{$i.updated_at}</td>
@@ -182,8 +182,8 @@
                 {foreach from=$queueditems key=ID item=i}
                <tr class="text-center">
                   <td style="width: 8%;">#{$i.id}</td>
-                  <td style="width: 8%;"><a target="_blank" href="http://whmcs.vietnix.vn/admin/invoices.php?action=edit&id={$i.invoiceid}">{'#'}{$i.invoiceid}</a></td>
-                  <td style="width: 12%;"><a target="_blank" href="http://whmcs.vietnix.vn/admin/clientssummary.php?userid={$i.userid}">{$i.username}</a></td>
+                  <td style="width: 8%;"><a target="_blank" href="invoices.php?action=edit&id={$i.invoiceid}">{'#'}{$i.invoiceid}</a></td>
+                  <td style="width: 12%;"><a target="_blank" href="clientssummary.php?userid={$i.userid}">{$i.username}</a></td>
                   <td style="width: 7%;">{$i.type}</td>
                   <td style="width: 40%;">{$i.description}</td>
                   <td style="width: 15%;">{$i.updated_at}</td>
@@ -234,8 +234,8 @@
               {foreach from=$createditems key=ID item=i}
                <tr class="text-center">
                   <td style="width: 8%;">#{$i.id}</td>
-                  <td style="width: 8%;"><a target="_blank" href="http://whmcs.vietnix.vn/admin/invoices.php?action=edit&id={$i.invoiceid}">{'#'}{$i.invoiceid}</a></td>
-                  <td style="width: 12%;"><a target="_blank" href="http://whmcs.vietnix.vn/admin/clientssummary.php?userid={$i.userid}">{$i.username}</a></td>
+                  <td style="width: 8%;"><a target="_blank" href="invoices.php?action=edit&id={$i.invoiceid}">{'#'}{$i.invoiceid}</a></td>
+                  <td style="width: 12%;"><a target="_blank" href="clientssummary.php?userid={$i.userid}">{$i.username}</a></td>
                   <td style="width: 7%;">{$i.type}</td>
                   <td style="width: 40%;">
                     IP address: 57457457<br/>
